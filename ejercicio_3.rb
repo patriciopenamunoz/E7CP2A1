@@ -157,7 +157,7 @@ def obtener_promedio_edades(lista)
   if lista.length.zero?
     puts 'No hay personas registradas'
   else
-    promedio = lista.inject(0) { |sum, n| sum + n } / lista.length
+    promedio = lista.inject(0) { |sum, n| sum + n[:edad] } / lista.length
     puts "La media aritmetica de edades es: #{promedio}."
   end
 end
