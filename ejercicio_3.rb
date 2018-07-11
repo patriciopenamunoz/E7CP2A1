@@ -23,7 +23,7 @@ def registrar_genero
     case gets.chomp.to_i
     when 1 then return 'Masculino'
     when 2 then return 'Femenino'
-    when 3 then return 'otro'
+    when 3 then return 'Otro'
     else puts 'La opción seleccionada no es válida'
     end
   end
